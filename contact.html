@@ -1,0 +1,72 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>erikh_Contact</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+
+		<!-- container for all -->
+		<div class="container">
+
+			<!-- sidebar -->
+			<aside class="sidebar">
+				<h1>Extra!</h1>
+				<ul>
+					<li><a href="https://tkga.org/">Projects</a></li>
+					<li><a href="https://en.wikipedia.org/wiki/The_Witches_(novel)">Stuff</a></li>
+				</ul>
+			</aside>
+
+			<!-- 2nd container for hdr & main -->
+			<div class="container_hdr_main">
+
+				<!-- header -->
+				<div class="header">
+					<div class = "hdr-left">
+						<p id = "hdr-name"><a href="index.html">Erik Hollanders</a></p>
+						<p id = "hdr-profession">Java Developer</p>
+						<br><br>
+						<p id = "hdr-quote"><q>What have you been doing? Running around in a sausage factory?</q></p>
+					</div>
+
+					<div class = "hdr-right">
+						<img src = "image/erikjeBW.png" alt = "avatar" class = "avatar">
+					</div>
+				</div>
+
+				<!-- main content -->
+				<div class = "content-main">
+					<p id = "contact-me">Contact me</p>
+					<br>
+
+					<form action="mailto:erik.hollanders@student.intecbrussel.be"
+					method="POST"
+					enctype=multipart/form-data"
+					name="EmailForm">
+						<label for="fname">First name:</label><br>
+						<input type="text" id="fname" name="fname"><br>
+						<br>
+
+						<label for="lname">Last name:</label><br>
+						<input type="text" id="lname" name="lname"><br>
+						<br>
+
+						<label for="message">Write your message:</label><br>
+						<textarea id="message" name="message"></textarea><br>
+						<br>
+
+						<input type="submit" value="submit"> <input type="reset" value="clear">
+					</form>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>
+	</html>

@@ -18,13 +18,13 @@ h1, li, ol, p, ul {
 	flex-direction: row;
 	margin: 0 auto;
 	min-width: 540px;
-	max-width: 800px;
+	max-width: 960px;
 }
 
 .sidebar {
 	height: 100%;
-	width: 20%;
-	max-width: 160px;
+	width: 25%;
+	max-width: 240px;
 	color: white;
 	background-image: linear-gradient(to right, rgba(170,56,46,0.81), rgba(170,56,46,0.89), rgba(170,56,46,0.94), rgba(170,56,46,0.97), rgba(170,56,46,0.99), rgba(170,56,46,1));
 }
@@ -61,44 +61,43 @@ h1, li, ol, p, ul {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
-	min-width: 432px;
-	max-width: 640px;
+	min-width: 405px;
+	max-width: 720px;
 }
 
 .header {
 	display: flex;
 	flex-direction: row;
 	height: 25%;
-	min-height: 175px;
-	max-height: 200px;
+	min-height: 200px;
+	max-height: 240px;
 	width: 100%;
-	max-width: 640px;
-	left: 20%;
+	max-width: 720px;
+	left: 25%;
 	background-image: linear-gradient(to left, rgba(211,211,211,0.81), rgba(211,211,211,0.89), rgba(211,211,211,0.94), rgba(211,211,211,0.97), rgba(211,211,211,0.99), rgba(211,211,211,1));
 	padding: 20px;
 }
 
 .hdr-left {
-	width: 67%;
-	min-width: 288px;
-	max-width: 427px;
-	height: 100%;
+	width: 75%;
+	min-width: 304px;
+	max-width: 540px;
 	color: black;
 }
 
-.hdr-right {
-	flex: 1;
-	height: 100%;
-}
-
-#hdr-name {
-	font-size: 36px;
+#hdr-name a {
+	font-size: 4.1vw;
 	font-weight: bold;
 	color: #Aa382e;
+	text-decoration: none;
+}
+
+#hdr-name a:hover {
+	color: white;
 }
 
 #hdr-profession {
-	font-size: 20px;
+	font-size: 2.4vw;
 	font-weight: bold;
 }
 
@@ -108,23 +107,30 @@ h1, li, ol, p, ul {
 	quotes: "„" "“" "‚" "‘";
 }
 
-.content {
+.hdr-right {
+	flex: 1;
+}
+
+.avatar {
+	display: inherit;
+	margin: auto;
+}
+
+.content-main {
 	flex: 1;
 	width: 100%;
-	max-width: 640px;
-	left: 20%;
-	top: 25%;
+	max-width: 720px;
 	padding: 8px;
 	background-image: linear-gradient(to left, rgba(211,211,211,0.81), rgba(211,211,211,0.89), rgba(211,211,211,0.94), rgba(211,211,211,0.97), rgba(211,211,211,0.99), rgba(211,211,211,1));
 }
 
-#dreams, #stats {
+#dreams, #stats, #contact-me {
 	padding: 2px;
 	border-top: 1px solid #Aa382e;
 	border-bottom: 1px solid #Aa382e;
 }
 
-table {
+table, form {
 	height: auto;
 	width: 100%;
 	padding: 0 12px 0;
@@ -144,13 +150,27 @@ tr:nth-child(odd) {
 	background: #A0A0A0;
 }
 
+input[type=text], textarea {
+	background-color: rgba(222,222,222,0.4);
+	width: 50%;
+	/* border: 2px inset #Aa382e; */
+	padding: 0 12px 0;
+	resize: vertical;
+}
+
 /* xtra responsiveness  */
-@media screen and (min-width: 1080px) {
+@media screen and (min-width: 960px) {
 	.sidebar h1 {
-		font-size: 36px;
+		font-size: 32px;
 	}
 	.sidebar a {
 		font-size: 21px;
+	}
+	#hdr-name a {
+		font-size: 38px;
+	}
+	#hdr-profession {
+		font-size: 24px;
 	}
 }
 
@@ -160,5 +180,11 @@ tr:nth-child(odd) {
 	}
 	.sidebar a {
 		font-size: 15px;
+	}
+	#hdr-name a {
+		font-size: 28px;
+	}
+	#hdr-profession {
+		font-size: 18px;
 	}
 }
