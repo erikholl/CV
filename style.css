@@ -2,14 +2,11 @@
 	height: 100%;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: "AdaptiveCode Regular", courier, monospace;
-	/* background-color: black; */
 }
 
 body {
-	margin: 0 auto;
-	min-width: 540px;
-	max-width: 800px;
+	background-color: black;
+	font-family: "AdaptiveCode Regular", courier, monospace;
 }
 
 h1, li, ol, p, ul {
@@ -19,7 +16,9 @@ h1, li, ol, p, ul {
 .container {
 	display: flex;
 	flex-direction: row;
-	background-color: black;
+	margin: 0 auto;
+	min-width: 540px;
+	max-width: 800px;
 }
 
 .sidebar {
