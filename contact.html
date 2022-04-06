@@ -50,25 +50,31 @@
 			<!-- TODO: font for content -->
 			<!-- TODO: content is vertically too long now? investigate -->
 			<div class = "content-main">
-				<p class = "content-hdr">EDUCATION</p>
+				<p class = "content-hdr">CONTACT</p>
 				<br>
-				<b>Studies</b>: Java EE Developer @Intec Brussels, JavaScript Basis @VDAB, Philosophy à la carte (modules on demand) @Rijksuniversiteit Leiden, 1 year Architecture @TU Delft.<br>
-				<b>Courses</b>: GDPR, Project Management methodologies, Dutch Employment Law, Problem analysis.
-				<br><br>
-				<p class = "content-hdr">CAREER</p>
 				<br>
-				<ul>
-					<li>2007 - 2020: Nokia / Alcatel-Lucent: Global HR Data Privacy Officer, HR Project Manager, HRIS Expert, Payroll Expert, Sales Reporting, Change Management support</li>
-					<li>2001 - 2005: PAC Informatisering: Payroll & Personnel administration, Coordinator internships, Office Management</li>
-					<li>Other roles: Customer Service, Nightwatch, Bartender</li>
-				</ul>
+				<p class = "content-hdr">SEND ME AN EMAIL</p>
 				<br>
-				<p class = "content-hdr">MISCELLANEOUS</p>
-				<br>
-				<ul>
-					<li>2021: Volunteer Huis van Het Nederlands Babbelut - Mentor</li>
-					<li>2005-2009: Writer / editor for several Dutch art / music maga- e-zines</li>
-				</ul>
+
+				<!-- TODO: improve form (PHP?) -->
+				<form action="mailto:erik.hollanders@student.intecbrussel.be"
+				method="POST"
+				enctype=multipart/form-data"
+				name="EmailForm">
+					<label for="fname">First name:</label><br>
+					<input type="text" id="fname" name="fname"><br>
+					<br>
+
+					<label for="lname">Last name:</label><br>
+					<input type="text" id="lname" name="lname"><br>
+					<br>
+
+					<label for="message">Write your message:</label><br>
+					<textarea id="message" name="message"></textarea><br>
+					<br>
+
+					<input type="submit" value="submit"> <input type="reset" value="clear">
+				</form>
 
 			</div>
 

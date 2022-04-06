@@ -5,8 +5,11 @@
 }
 
 body {
-	background-color: black;
-	font-family: "AdaptiveCode Regular", courier, monospace;
+	background-color: white;
+	/* font-family: "AdaptiveCode Regular", courier, monospace; */
+	font-family: Inter, sans-serif;
+	line-height: 1.6;
+	letter-spacing: 0.05em;
 }
 
 h1, li, ol, p, ul {
@@ -21,11 +24,13 @@ h1, li, ol, p, ul {
 	max-width: 960px;
 }
 
+/* TODO: try #28e06e for sidebar */
 .sidebar {
 	height: 100%;
 	width: 25%;
 	max-width: 240px;
 	color: white;
+	/* background-color: #f7e561; */
 	background-image: linear-gradient(to right, rgba(170,56,46,0.81), rgba(170,56,46,0.89), rgba(170,56,46,0.94), rgba(170,56,46,0.97), rgba(170,56,46,0.99), rgba(170,56,46,1));
 }
 
@@ -34,16 +39,17 @@ h1, li, ol, p, ul {
 	font-style: italic;
 	text-align: center;
 	padding-top: 8vh;
-	padding-bottom: 4vh;
+	padding-bottom: 2vh;
 }
 
 .sidebar ul {
-	padding: 1.6vh 2.4vw 1.6vh;
+	/* padding: 1vh 2vw 1vh; */
+	list-style-type: none;
 }
 
 .sidebar li {
 	text-align: justify;
-	padding-bottom: 2vh;
+	padding-bottom: 1vh;
 }
 
 .sidebar a {
@@ -53,7 +59,7 @@ h1, li, ol, p, ul {
 }
 
 .sidebar a:hover {
-	color: dimgrey;
+	color: #160647;
 }
 
 .container_hdr_main {
@@ -69,11 +75,10 @@ h1, li, ol, p, ul {
 	display: flex;
 	flex-direction: row;
 	height: 25%;
-	min-height: 200px;
-	max-height: 240px;
+	min-height: 300px;
+	/* max-height: 240px; */
 	width: 100%;
 	max-width: 720px;
-	left: 25%;
 	background-image: linear-gradient(to left, rgba(211,211,211,0.81), rgba(211,211,211,0.89), rgba(211,211,211,0.94), rgba(211,211,211,0.97), rgba(211,211,211,0.99), rgba(211,211,211,1));
 	padding: 20px;
 }
@@ -124,10 +129,12 @@ h1, li, ol, p, ul {
 }
 
 .content-main {
+	padding: 20px;
 	flex: 1;
 	width: 100%;
 	max-width: 720px;
-	padding: 8px;
+	font-size: 15px;
+	color: #160647;
 	background-image: linear-gradient(to left, rgba(211,211,211,0.81), rgba(211,211,211,0.89), rgba(211,211,211,0.94), rgba(211,211,211,0.97), rgba(211,211,211,0.99), rgba(211,211,211,1));
 }
 
@@ -135,6 +142,9 @@ h1, li, ol, p, ul {
 	padding: 2px;
 	border-top: 1px solid #Aa382e;
 	border-bottom: 1px solid #Aa382e;
+	font-size: 16px;
+	font-weight: bold;
+	color: #Aa382e;
 }
 
 table, form {
