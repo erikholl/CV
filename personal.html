@@ -14,9 +14,9 @@
 
 			<!-- sidebar -->
 			<aside class="sidebar">
-				<h1>Extra!</h1>
+				<h1>Sidebar</h1>
 				<ul>
-					<li><a href="https://tkga.org/">Projects</a></li>
+					<li><a href="projects.html">Projects</a></li>
 					<li><a href="https://en.wikipedia.org/wiki/The_Witches_(novel)">Stuff</a></li>
 				</ul>
 			</aside>
@@ -28,9 +28,14 @@
 				<div class="header">
 					<div class = "hdr-left">
 						<p id = "hdr-name"><a href="index.html">Erik Hollanders</a></p>
-						<p id = "hdr-profession">Java Developer</p>
-						<br><br>
-						<p id = "hdr-quote"><q>What have you been doing? Running around in a sausage factory?</q></p>
+						<p id = "hdr-profession">Junior Java Developer</p>
+						<br>
+						<ul id="hdr-list">
+							<li>Tried and tested in projects & people</li>
+							<li>Skilled in analytical thinking & writing</li>
+							<li>Searching a socially engaged challenge</li>
+						</ul>
+						<!-- <p id = "hdr-quote"><q>What have you been doing? Running around in a sausage factory?</q></p> -->
 					</div>
 
 					<div class = "hdr-right">
@@ -40,9 +45,37 @@
 
 				<!-- main content -->
 				<div class = "content-main">
-					<p id = "contact-me">Contact me</p>
+					<p class = "content-hdr">ABOUT</p>
+					<br>
+					<table>
+						<tr>
+							<th>STAT</th>
+							<th>AWESOMENESS</th>
+						</tr>
+						<tr>
+							<td>Places</td>
+							<td>Dutch, living in Brussels</td>
+						</tr>
+						<tr>
+							<td>Age</td>
+							<td>I grew up playing Prince, Nirvana and Sonic Youth</td>
+						</tr>
+						<tr>
+							<td>Favorite food</td>
+							<td>Italian, Japanese</td>
+						</tr>
+						<tr>
+							<td>LinkedIn</td>
+							<td><a href="linkedin.com/erikhollanders">Have a look</a></td>
+						</tr>
+					</table>
+					<br>
 					<br>
 
+					<p class = "content-hdr">SEND ME AN EMAIL</p>
+					<br>
+
+					<!-- TODO: improve form (PHP?) -->
 					<form action="mailto:erik.hollanders@student.intecbrussel.be"
 					method="POST"
 					enctype=multipart/form-data"

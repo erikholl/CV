@@ -47,7 +47,7 @@ h1, li, ol, p, ul {
 }
 
 .sidebar a {
-	font-size: 2.1vw;
+	font-size: 2vw;
 	color: white;
 	text-decoration: none;
 }
@@ -101,11 +101,18 @@ h1, li, ol, p, ul {
 	font-weight: bold;
 }
 
-#hdr-quote {
+#hdr-list {
+	font-size: 16px;
+	font-style: italic;
+	list-style-type: circle;
+	padding-left: 16px;
+}
+
+/* #hdr-quote {
 	font-size: 16px;
 	font-style: italic;
 	quotes: "„" "“" "‚" "‘";
-}
+} */
 
 .hdr-right {
 	flex: 1;
@@ -124,7 +131,7 @@ h1, li, ol, p, ul {
 	background-image: linear-gradient(to left, rgba(211,211,211,0.81), rgba(211,211,211,0.89), rgba(211,211,211,0.94), rgba(211,211,211,0.97), rgba(211,211,211,0.99), rgba(211,211,211,1));
 }
 
-#dreams, #stats, #contact-me {
+.content-hdr {
 	padding: 2px;
 	border-top: 1px solid #Aa382e;
 	border-bottom: 1px solid #Aa382e;
@@ -139,6 +146,15 @@ table, form {
 tr, th, td {
 	height:  12px;
 	border: 1px solid black;
+}
+
+td a {
+	text-decoration: none;
+	color: #Aa382e;
+}
+
+td a:hover {
+	color: white;
 }
 
 th {
@@ -164,7 +180,7 @@ input[type=text], textarea {
 		font-size: 32px;
 	}
 	.sidebar a {
-		font-size: 21px;
+		font-size: 20px;
 	}
 	#hdr-name a {
 		font-size: 38px;
