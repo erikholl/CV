@@ -5,8 +5,8 @@
 }
 
 body {
-	background-color: white;
 	/* font-family: "AdaptiveCode Regular", courier, monospace; */
+	background-image: url("image/bg_jemesense_io.jpg");
 	font-family: Inter, sans-serif;
 	line-height: 1.6;
 	letter-spacing: 0.05em;
