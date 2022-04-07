@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>erikh-CV</title>
 	<link rel="stylesheet" href="style.css" />
+	<script src="script/folding.js" defer></script>
 </head>
 
 <body>
@@ -50,9 +51,7 @@
 				<!-- about me -->
 				<button type="button" class = "collapsible">ABOUT ME</button>
 				<div class="content">
-					<p>Hi, I'm Erik. I'm Dutch and live in Brussels. I grew up playing H.E.R.O. on the Atari2600 and listening to Prince and Sonic Youth.<br>
-					I've worked for a long time in telecom, mostly on HR projects. I decided a career-switch and started to learn coding in 2021. <!--My current programming skills are with Java, JavaScript, HTML, CSS, MySQL, MAX/MSP, Processing. I'm knowledgeable on JPA and Hibernate and I'm experienced with traditional and agile project methodologies. I know my way with Git, GitHub, Intellij IDEA, DataGrip, MS Visual Studio, SharePoint, PowerBI, Access, Visio, SAP ERP & SF HRIS and with several design, photo and sound applications.-->
-					<br> I speak Dutch and English fluently; French and German at a basic level. I eat and cook mostly Italian and Japanese.</p>
+					<p>Hi, I'm Erik. I'm Dutch and live in Brussels. I grew up playing H.E.R.O. on the Atari2600 and listening to Prince and Sonic Youth. I've worked a long time in telecom, mostly on HR projects. I decided a career-switch and started to learn coding in 2021. <!--My current programming skills are with Java, JavaScript, HTML, CSS, MySQL, MAX/MSP, Processing. I'm knowledgeable on JPA and Hibernate and I'm experienced with traditional and agile project methodologies. I know my way with Git, GitHub, Intellij IDEA, DataGrip, MS Visual Studio, SharePoint, PowerBI, Access, Visio, SAP ERP & SF HRIS and with several design, photo and sound applications.--> I speak Dutch and English fluently; French and German at a basic level. I eat and cook mostly Italian and Japanese.</p>
 				</div>
 
 				<!-- education -->
@@ -77,9 +76,9 @@
 				<div class="content">
 					<p>2007 - 2020 @Alcatel-Lucent / Nokia:</p>
 					<ul>
-						<li>2019 - 2020 Global HR Data Privacy Officer: Guide & guard privacy compliance HR data</li>
-						<li>2012 - 2020 HR Project Manager: Implementation of HR projects (~ 50K to 10M) + Coaching jr. PM's</li>
-						<li>2007 - 2015 Other roles: HRIS expert, Payroll expert, Sales Reporting, Change management expert</li>
+						<li>2019 - 2020 Global HR Data Privacy Officer</li>
+						<li>2012 - 2020 HR PM: HR projects implementation + Coaching jr. PM's</li>
+						<li>2007 - 2015 Other roles: HRIS & Payroll expert,  Sales Reporting, Change management</li>
 					</ul>
 					<p>2001 - 2005 @PAC Informatisering:</p>
 					<ul>
@@ -105,28 +104,8 @@
 				</div>
 
 			</div>
-
 		</div>
-
 	</div>
-
-	<!-- a small script for folding / unfolding -->
-	<script>
-		var coll = document.getElementsByClassName("collapsible");
-		var i;
-
-		for (i = 0; i < coll.length; i++) {
-		  coll[i].addEventListener("click", function() {
-		    this.classList.toggle("active");
-		    var content = this.nextElementSibling;
-		    if (content.style.display === "block") {
-		      content.style.display = "none";
-		    } else {
-		      content.style.display = "block";
-		    }
-		  });
-		}
-	</script>
 
 </body>
 </html>

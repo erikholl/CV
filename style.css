@@ -14,6 +14,7 @@ body {
 
 h1, li, ol, p, ul, .collapsible {
 	height: auto;
+	list-style-type: circle;
 }
 
 .container {
@@ -42,14 +43,10 @@ h1, li, ol, p, ul, .collapsible {
 	padding-bottom: 2vh;
 }
 
-.sidebar ul {
-	/* padding: 1vh 2vw 1vh; */
-	list-style-type: none;
-}
-
 .sidebar li {
 	text-align: justify;
 	padding-bottom: 1vh;
+	list-style-type: none;
 }
 
 .sidebar a {
@@ -76,7 +73,6 @@ h1, li, ol, p, ul, .collapsible {
 	flex-direction: row;
 	height: 25%;
 	min-height: 300px;
-	/* max-height: 240px; */
 	width: 100%;
 	max-width: 720px;
 	background-image: linear-gradient(to left, rgba(211,211,211,0.81), rgba(211,211,211,0.89), rgba(211,211,211,0.94), rgba(211,211,211,0.97), rgba(211,211,211,0.99), rgba(211,211,211,1));
@@ -109,7 +105,6 @@ h1, li, ol, p, ul, .collapsible {
 #hdr-list {
 	font-size: 16px;
 	font-style: italic;
-	list-style-type: circle;
 	padding-left: 16px;
 }
 
@@ -161,11 +156,24 @@ h1, li, ol, p, ul, .collapsible {
 }
 
 .content {
-	padding: 8px;
+	padding: 12px;
 	font-size: 15px;
 	height: auto;
 	display: none;
 	overflow: hidden;
+}
+
+.content ul {
+	padding: 12x;
+}
+
+.content a {
+	color: #Aa382e;
+	text-decoration: none;
+}
+
+.content a:hover {
+	color: white;
 }
 
 table, form {
@@ -184,8 +192,6 @@ tr, th, td {
 	text-align: left;
 	height:  12px;
 	border-bottom: 1px solid #a9a9a9;
-	/* border-style: dotted; */
-	/* border: 1px solid black; */
 }
 
 td a {
@@ -212,7 +218,6 @@ tr:nth-child(odd) {
 input[type=text], textarea {
 	background-color: rgba(222,222,222,0.4);
 	width: 50%;
-	/* border: 2px inset #Aa382e; */
 	padding: 0 12px 0;
 	resize: vertical;
 }
