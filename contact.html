@@ -17,8 +17,7 @@
 		<aside class="sidebar">
 			<h1>Navigate!</h1>
 			<ul>
-				<li><a href="aboutme.html">About me</a></li>
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="skills.html">Skills</a></li>
 				<li><a href="projects.html">Project</a></li>
 			</ul>
@@ -50,37 +49,59 @@
 			<!-- TODO: font for content -->
 			<!-- TODO: content is vertically too long now? investigate -->
 			<div class = "content-main">
-				<p class = "content-hdr">CONTACT</p>
-				<br>
-				<br>
-				<p class = "content-hdr">SEND ME AN EMAIL</p>
-				<br>
+				<button type="button" class="collapsible">CONTACT</button>
+				<div class="content">
+					<p>add contact stuff</p>
+					<p>add contact stuff</p>
+				</div>
 
-				<!-- TODO: improve form (PHP?) -->
-				<form action="mailto:erik.hollanders@student.intecbrussel.be"
-				method="POST"
-				enctype=multipart/form-data"
-				name="EmailForm">
-					<label for="fname">First name:</label><br>
-					<input type="text" id="fname" name="fname"><br>
-					<br>
+				<button type="button" class="collapsible">SEND ME AN EMAIL</button>
+				<div class="content">
+					<!-- TODO: improve form (PHP?) -->
+					<form action="mailto:erik.hollanders@student.intecbrussel.be"
+					method="POST"
+					enctype=multipart/form-data
+					name="EmailForm">
+						<label for="fname">First name:</label><br>
+						<input type="text" id="fname" name="fname"><br>
+						<br>
 
-					<label for="lname">Last name:</label><br>
-					<input type="text" id="lname" name="lname"><br>
-					<br>
+						<label for="lname">Last name:</label><br>
+						<input type="text" id="lname" name="lname"><br>
+						<br>
 
-					<label for="message">Write your message:</label><br>
-					<textarea id="message" name="message"></textarea><br>
-					<br>
+						<label for="message">Write your message:</label><br>
+						<textarea id="message" name="message"></textarea><br>
+						<br>
 
-					<input type="submit" value="submit"> <input type="reset" value="clear">
-				</form>
+						<input type="submit" value="submit"> <input type="reset" value="clear">
+					</form>
+
+				</div>
 
 			</div>
 
 		</div>
 
 	</div>
+
+	<!-- a small script for folding / unfolding -->
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.display === "block") {
+					content.style.display = "none";
+				} else {
+					content.style.display = "block";
+				}
+			});
+		}
+	</script>
 
 </body>
 </html>

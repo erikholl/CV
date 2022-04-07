@@ -17,7 +17,6 @@
 		<aside class="sidebar">
 			<h1>Navigate!</h1>
 			<ul>
-				<li><a href="aboutme.html">About me</a></li>
 				<li><a href="contact.html">Contact</a></li>
 				<li><a href="skills.html">Skills</a></li>
 				<li><a href="projects.html">Project</a></li>
@@ -38,7 +37,6 @@
 						<li>Skilled in analytical thinking & writing</li>
 						<li>Searching a socially engaged challenge</li>
 					</ul>
-					<!-- <p id = "hdr-quote"><q>What have you been doing? Running around in a sausage factory?</q></p> -->
 				</div>
 
 				<div class = "hdr-right">
@@ -47,34 +45,88 @@
 			</div>
 
 			<!-- main content -->
-			<!-- TODO: font for content -->
-			<!-- TODO: content is vertically too long now? investigate -->
 			<div class = "content-main">
-				<p class = "content-hdr">EDUCATION</p>
-				<br>
-				<b>Studies</b>: Java EE Developer @Intec Brussels, JavaScript Basis @VDAB, Philosophy à la carte (modules on demand) @Rijksuniversiteit Leiden, 1 year Architecture @TU Delft.<br>
-				<b>Courses</b>: GDPR, Project Management methodologies, Dutch Employment Law, Problem analysis.
-				<br><br>
-				<p class = "content-hdr">CAREER</p>
-				<br>
-				<ul>
-					<li>2007 - 2020: Nokia / Alcatel-Lucent: Global HR Data Privacy Officer, HR Project Manager, HRIS Expert, Payroll Expert, Sales Reporting, Change Management support</li>
-					<li>2001 - 2005: PAC Informatisering: Payroll & Personnel administration, Coordinator internships, Office Management</li>
-					<li>Other roles: Customer Service, Nightwatch, Bartender</li>
-				</ul>
-				<br>
-				<p class = "content-hdr">MISCELLANEOUS</p>
-				<br>
-				<ul>
-					<li>2021: Volunteer Huis van Het Nederlands Babbelut - Mentor</li>
-					<li>2005-2009: Writer / editor for several Dutch art / music maga- e-zines</li>
-				</ul>
+
+				<!-- about me -->
+				<button type="button" class = "collapsible">ABOUT ME</button>
+				<div class="content">
+					<p>Hi, I'm Erik. I'm Dutch and live in Brussels. I grew up playing H.E.R.O. on the Atari2600 and listening to Prince and Sonic Youth.<br>
+					I've worked for a long time in telecom, mostly on HR projects. I decided a career-switch and started to learn coding in 2021. <!--My current programming skills are with Java, JavaScript, HTML, CSS, MySQL, MAX/MSP, Processing. I'm knowledgeable on JPA and Hibernate and I'm experienced with traditional and agile project methodologies. I know my way with Git, GitHub, Intellij IDEA, DataGrip, MS Visual Studio, SharePoint, PowerBI, Access, Visio, SAP ERP & SF HRIS and with several design, photo and sound applications.-->
+					<br> I speak Dutch and English fluently; French and German at a basic level. I eat and cook mostly Italian and Japanese.</p>
+				</div>
+
+				<!-- education -->
+				<button type="button" class="collapsible">EDUCATION</button>
+				<div class="content">
+					<!-- <br> -->
+					<ul>
+						<li>2021 - 2022 @Intec Brussels: Java EE Developer</li>
+						<li>2021 @VDAB: JavaScript Basis</li>
+						<li>2021 Self-taught: HTML & CSS</li>
+						<li>2007 - 2020 courses @internal Alcatel-Lucent / Nokia University: GDPR, Design Thinking, Waterfall & Agile PM methodology</li>
+						<li>2009 @IMK Opleidingen: Dutch Employment Law</li>
+						<li>2010 - 2011 @RijksUniversiteit Leiden: Philosophy a la carte</li>
+						<li>1994 - 1995 @RijksUniversiteit Leiden: started Astronomy</li>
+						<li>1993 - 1994 @TU Delft: started Architecture</li>
+					</ul>
+				</div>
+				<!-- <br> -->
+
+				<!-- career -->
+				<button type="button" class ="collapsible">CAREER</button>
+				<div class="content">
+					<p>2007 - 2020 @Alcatel-Lucent / Nokia:</p>
+					<ul>
+						<li>2019 - 2020 Global HR Data Privacy Officer: Guide & guard privacy compliance HR data</li>
+						<li>2012 - 2020 HR Project Manager: Implementation of HR projects (~ 50K to 10M) + Coaching jr. PM's</li>
+						<li>2007 - 2015 Other roles: HRIS expert, Payroll expert, Sales Reporting, Change management expert</li>
+					</ul>
+					<p>2001 - 2005 @PAC Informatisering:</p>
+					<ul>
+						<li>Personnel & Payroll administration</li>
+						<li>Coordinator Internships</li>
+						<li>Office Management</li>
+					</ul>
+					<p>1995 - 2005 @Different employers, other roles:</P>
+					<ul>
+						<li>Customer service Vodafone, KPN</li>
+						<li>Night Watch Carlton Beach Hotel</li>
+						<li>Bartender, DJ, sound studio support</li>
+					</ul>
+				</div>
+
+					<!-- miscellaneous -->
+				<button type="button" class ="collapsible">MISCELLANEOUS</button>
+				<div class="content">
+					<ul>
+						<li>2021: Volunteer Huis van Het Nederlands Babbelut - Mentor</li>
+						<li>2005-2009: Writer / editor for several Dutch art / music maga- e-zines</li>
+					</ul>
+				</div>
 
 			</div>
 
 		</div>
 
 	</div>
+
+	<!-- a small script for folding / unfolding -->
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+		  coll[i].addEventListener("click", function() {
+		    this.classList.toggle("active");
+		    var content = this.nextElementSibling;
+		    if (content.style.display === "block") {
+		      content.style.display = "none";
+		    } else {
+		      content.style.display = "block";
+		    }
+		  });
+		}
+	</script>
 
 </body>
 </html>

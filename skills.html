@@ -17,9 +17,8 @@
 		<aside class="sidebar">
 			<h1>Navigate!</h1>
 			<ul>
-				<li><a href="aboutme.html">About me</a></li>
+				<li><a href="index.html">Home</a></li>
 				<li><a href="contact.html">Contact</a></li>
-				<li><a href="skills.html">Skills</a></li>
 				<li><a href="projects.html">Project</a></li>
 			</ul>
 		</aside>
@@ -47,26 +46,52 @@
 			</div>
 
 			<!-- main content -->
-			<!-- TODO: font for content -->
-			<!-- TODO: content is vertically too long now? investigate -->
 			<div class = "content-main">
-				<p class = "content-hdr">...</p>
-				<br>
-				<br>
-				<p class = "content-hdr">...</p>
-				<br>
-				<ul>
-					<li>...</li>
-					<li>...</li>
-					<li>...</li>
-				</ul>
-				<br>
+				<!-- skills -->
+				<button type="button" class="collapsible">SKILLS</button>
+				<div class="content">
+					<p>add skill stuff</p>
+					<p>add skill stuff</p>
+					<ul>
+						<li>...</li>
+						<li>...</li>
+						<li>...</li>
+					</ul>
+				</div>
+
+				<button type="button" class="collapsible">COMPETENCIES</button>
+				<div class="content">
+					<p>add competency stuff</p>
+					<p>add competency stuff</p>
+					<ul>
+						<li>...</li>
+						<li>...</li>
+						<li>...</li>
+					</ul>
+				</div>
 
 			</div>
 
 		</div>
 
 	</div>
+
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.display === "block") {
+					content.style.display = "none";
+				} else {
+					content.style.display = "block";
+				}
+			});
+		}
+	</script>
 
 </body>
 </html>

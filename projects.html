@@ -18,7 +18,6 @@
 			<h1>Navigate!</h1>
 			<ul>
 				<li><a href="index.html">Home</a></li>
-				<li><a href="aboutme.html">About me</a></li>
 				<li><a href="contact.html">Contact</a></li>
 				<li><a href="skills.html">Skills</a></li>
 			</ul>
@@ -48,25 +47,57 @@
 
 			<!-- main content -->
 			<div class = "content-main">
-				<p class = "content-hdr">PROJECT 1</p>
+
+				<!-- project 1 -->
+				<button type="button" class="collapsible">PROJECT1</button>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend felis et nisi fermentum, nec tempus urna scelerisque.<br>
+					<a href="https://github.com/erikholl/hibernate-new-OMS">OMS with Hibernate</a></p>
+				</div>
+
+				<!-- project 2 -->
+				<button type="button" class="collapsible">PROJECT2</button>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend felis et nisi fermentum, nec tempus urna scelerisque.<br>
+					WORK IN PROGRESS.</p>
+				</div>
+
+				<!-- <p class = "content-hdr">PROJECT 1</p>
 				<br>
 				<p id="project-descr">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend felis et nisi fermentum, nec tempus urna scelerisque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum eget tincidunt ipsum, sed accumsan dolor. In sed maximus ipsum. Curabitur suscipit nibh eu vulputate faucibus. Donec nisl leo.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend felis et nisi fermentum, nec tempus urna scelerisque.
 					<a href="https://github.com/erikholl/hibernate-new-OMS">OMS with Hibernate</a>
 				</p>
 				<br>
 				<p class = "content-hdr">PROJECT 2</p>
 				<br>
 				<p id="project-descr">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend felis et nisi fermentum, nec tempus urna scelerisque. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum eget tincidunt ipsum, sed accumsan dolor. In sed maximus ipsum. Curabitur suscipit nibh eu vulputate faucibus. Donec nisl leo.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eleifend felis et nisi fermentum, nec tempus urna scelerisque.
 					WORK IN PROGRESS.
-				</p>
+				</p> -->
 
 			</div>
 
 		</div>
 
 	</div>
+
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.display === "block") {
+					content.style.display = "none";
+				} else {
+					content.style.display = "block";
+				}
+			});
+		}
+	</script>
 
 </body>
 </html>

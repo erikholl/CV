@@ -12,7 +12,7 @@ body {
 	letter-spacing: 0.05em;
 }
 
-h1, li, ol, p, ul {
+h1, li, ol, p, ul, .collapsible {
 	height: auto;
 }
 
@@ -113,12 +113,6 @@ h1, li, ol, p, ul {
 	padding-left: 16px;
 }
 
-/* #hdr-quote {
-	font-size: 16px;
-	font-style: italic;
-	quotes: "„" "“" "‚" "‘";
-} */
-
 .hdr-right {
 	flex: 1;
 }
@@ -140,22 +134,58 @@ h1, li, ol, p, ul {
 
 .content-hdr {
 	padding: 2px;
+	width: 100%;
 	border-top: 1px solid #Aa382e;
 	border-bottom: 1px solid #Aa382e;
 	font-size: 16px;
 	font-weight: bold;
 	color: #Aa382e;
+	cursor: pointer;
+}
+
+.collapsible {
+	/* background-color: #777; */
+	color: #Aa382e;
+	cursor: pointer;
+	margin: 8px;
+	padding: 8px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 16px;
+}
+
+.active, .collapsible:hover {
+  background-color: #bebebe;
+}
+
+.content {
+	padding: 8px;
+	font-size: 15px;
+	height: auto;
+	display: none;
+	overflow: hidden;
 }
 
 table, form {
+	border-collapse: collapse;
 	height: auto;
 	width: 100%;
-	padding: 0 12px 0;
+	font-size: 14px;
+	/* padding: 0 12px 0; */
 }
 
+/* th {
+	background-color: #Aa382e;
+} */
+
 tr, th, td {
+	text-align: left;
 	height:  12px;
-	border: 1px solid black;
+	border-bottom: 1px solid #a9a9a9;
+	/* border-style: dotted; */
+	/* border: 1px solid black; */
 }
 
 td a {
@@ -168,12 +198,15 @@ td a:hover {
 }
 
 th {
-	background: black;
-	color: white;
+	/* width: 100%; */
+	background: #bebebe;
+	font-size: 15px;
+	/* color: white; */
+	color: #160647;
 }
 
 tr:nth-child(odd) {
-	background: #A0A0A0;
+	background: #f2f2f2;
 }
 
 input[type=text], textarea {
