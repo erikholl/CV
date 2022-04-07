@@ -1,6 +1,6 @@
-# frontend-resume
-Intec frontend exercise
+# resume
+Intec resume exercise: simple traditional resume layout. HTML, CSS, tiny bit of JS. With buttons to fold/unfold content.
 
 SCREENSHOT:
 
-![screenshot](https://user-images.githubusercontent.com/91531357/161120286-11128ba3-0c05-49e3-a451-58a4fb9b81db.png)
+![screenshot](https://user-images.githubusercontent.com/91531357/162197220-85a2d743-c1c4-488c-a74e-747b24a44542.jpg)
