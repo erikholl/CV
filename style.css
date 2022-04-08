@@ -5,7 +5,6 @@
 }
 
 body {
-	/* font-family: "AdaptiveCode Regular", courier, monospace; */
 	background-image: url("image/bg_jemesense_io.jpg");
 	font-family: Inter, sans-serif;
 	line-height: 1.6;
@@ -17,6 +16,7 @@ h1, li, ol, p, ul, .collapsible {
 	list-style-type: circle;
 }
 
+/* MAIN CONTAINER CV */
 .container {
 	display: flex;
 	flex-direction: row;
@@ -25,13 +25,12 @@ h1, li, ol, p, ul, .collapsible {
 	max-width: 960px;
 }
 
-/* TODO: try #28e06e for sidebar */
+/* SIDEBAR */
 .sidebar {
 	height: 100%;
 	width: 25%;
 	max-width: 240px;
 	color: white;
-	/* background-color: #f7e561; */
 	background-image: linear-gradient(to right, rgba(170,56,46,0.81), rgba(170,56,46,0.89), rgba(170,56,46,0.94), rgba(170,56,46,0.97), rgba(170,56,46,0.99), rgba(170,56,46,1));
 }
 
@@ -59,6 +58,7 @@ h1, li, ol, p, ul, .collapsible {
 	color: #160647;
 }
 
+/* CONTAINER FOR HEADER AND MAIN CONTENT */
 .container_hdr_main {
 	flex: 1;
 	display: flex;
@@ -68,6 +68,7 @@ h1, li, ol, p, ul, .collapsible {
 	max-width: 720px;
 }
 
+/* HEADER */
 .header {
 	display: flex;
 	flex-direction: row;
@@ -80,7 +81,7 @@ h1, li, ol, p, ul, .collapsible {
 }
 
 .hdr-left {
-	width: 75%;
+	width: 80%;
 	min-width: 304px;
 	max-width: 540px;
 	color: black;
@@ -113,10 +114,12 @@ h1, li, ol, p, ul, .collapsible {
 }
 
 .avatar {
+	height: 80%;
 	display: inherit;
 	margin: auto;
 }
 
+/* CONTENT PART */
 .content-main {
 	padding: 20px;
 	flex: 1;
@@ -126,17 +129,6 @@ h1, li, ol, p, ul, .collapsible {
 	color: #160647;
 	background-image: linear-gradient(to left, rgba(211,211,211,0.81), rgba(211,211,211,0.89), rgba(211,211,211,0.94), rgba(211,211,211,0.97), rgba(211,211,211,0.99), rgba(211,211,211,1));
 }
-
-/* .content-hdr {
-	padding: 2px;
-	width: 100%;
-	border-top: 1px solid #Aa382e;
-	border-bottom: 1px solid #Aa382e;
-	font-size: 16px;
-	font-weight: bold;
-	color: #Aa382e;
-	cursor: pointer;
-} */
 
 .collapsible {
 	padding: 8px;
@@ -175,6 +167,7 @@ h1, li, ol, p, ul, .collapsible {
 	color: white;
 }
 
+/* TOOLBOX SECTION */
 .skill {
 	width: 97.5%;
 }
@@ -201,25 +194,16 @@ td {
 	width: 40%;
 }
 
-td a {
-	text-decoration: none;
-	color: #Aa382e;
+/* CONTACT SECTION */
+.contact {
+	display: flex;
+	padding-bottom: 8px;
 }
 
-td a:hover {
-	color: white;
+/* filter function needed to change color of a .svg */
+.icon {
+	filter: invert(55%) sepia(47%) saturate(777%) hue-rotate(74deg) brightness(88%) contrast(84%);
 }
-
-/* th {
-	font-size: 13px;
-	font-style: normal;
-	color: white;
-	color: #160647;
-}
-
-tr:nth-child(odd) {
-	background: #f2f2f2;
-} */
 
 input[type=text], textarea {
 	background-color: rgba(222,222,222,0.4);
