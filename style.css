@@ -127,7 +127,7 @@ h1, li, ol, p, ul, .collapsible {
 	background-image: linear-gradient(to left, rgba(211,211,211,0.81), rgba(211,211,211,0.89), rgba(211,211,211,0.94), rgba(211,211,211,0.97), rgba(211,211,211,0.99), rgba(211,211,211,1));
 }
 
-.content-hdr {
+/* .content-hdr {
 	padding: 2px;
 	width: 100%;
 	border-top: 1px solid #Aa382e;
@@ -136,19 +136,18 @@ h1, li, ol, p, ul, .collapsible {
 	font-weight: bold;
 	color: #Aa382e;
 	cursor: pointer;
-}
+} */
 
 .collapsible {
-	/* background-color: #777; */
-	color: #Aa382e;
+	padding: 8px;
+	width: 97.5%;
 	cursor: pointer;
 	margin: 8px;
-	padding: 8px;
-	width: 100%;
 	border: none;
 	text-align: left;
 	outline: none;
 	font-size: 16px;
+	color: #Aa382e;
 }
 
 .active, .collapsible:hover {
@@ -176,6 +175,14 @@ h1, li, ol, p, ul, .collapsible {
 	color: white;
 }
 
+.skill {
+	width: 97.5%;
+}
+
+.checked {
+  color: #2EAA38;
+}
+
 table, form {
 	border-collapse: collapse;
 	height: auto;
@@ -184,14 +191,14 @@ table, form {
 	/* padding: 0 12px 0; */
 }
 
-/* th {
-	background-color: #Aa382e;
-} */
-
 tr, th, td {
 	text-align: left;
-	height:  12px;
+	font-style: normal;
 	border-bottom: 1px solid #a9a9a9;
+}
+
+td {
+	width: 40%;
 }
 
 td a {
@@ -203,17 +210,16 @@ td a:hover {
 	color: white;
 }
 
-th {
-	/* width: 100%; */
-	background: #bebebe;
-	font-size: 15px;
-	/* color: white; */
+/* th {
+	font-size: 13px;
+	font-style: normal;
+	color: white;
 	color: #160647;
 }
 
 tr:nth-child(odd) {
 	background: #f2f2f2;
-}
+} */
 
 input[type=text], textarea {
 	background-color: rgba(222,222,222,0.4);
